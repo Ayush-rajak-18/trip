@@ -642,3 +642,28 @@ input[type=password]:focus {
 
 
 
+@media (max-width: 767px) {
+    .top-bar .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .top-bar .col-lg-4,
+    .top-bar .col-md-6 {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .top-bar .col-lg-4:last-child {
+        margin-bottom: 0;
+    }
+
+    .top-bar .btn-stylish {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
