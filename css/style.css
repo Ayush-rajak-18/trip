@@ -604,3 +604,41 @@ input[type=password]:focus {
     
 }   
 
+
+
+.top-bar {
+    padding: 10px 0;
+}
+
+
+.contact-btn {
+    margin: 2px, 0;
+}
+
+/* Desktop view adjustments */
+@media (min-width: 992px) {
+    .top-bar .row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .top-bar .col-lg-4 {
+        margin-bottom: 0;
+    }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 991.98px) {
+    .top-bar .row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .top-bar .col-lg-4,
+    .top-bar .col-md-6 {
+        margin-bottom: 10px;
+    }
+}
+
+
+
