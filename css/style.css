@@ -1,0 +1,606 @@
+/********** Template CSS **********/
+
+body {
+    background-color: rgb(251, 251, 251);
+   }
+:root {
+    --primary: #009CFF;
+    --secondary: #777777;
+    --light: #F8F8F8;
+    --dark: #252525;
+}
+
+
+/* navbar */
+.container-fluid{
+    background-color: rgb(58, 194, 194)
+}
+
+.btn-stylish {
+    display: flex;
+    align-items: center;
+    color: black; 
+    background-color: transparent; 
+   
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px; 
+}
+
+.btn-stylish i {
+    color: black; 
+    margin-right: 8px; 
+}
+
+
+
+.text-primary {
+    color: black; 
+}
+
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+.pc-media {
+    display: block;
+}
+
+.pc-media a.mobile-phone {
+    font-size: 33px;
+    background: #4f91cc;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 50px;
+    left: 40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 3px 10px;
+    z-index: 98;
+}
+
+.pc-media a.whatsapp-phone {
+    font-size: 33px;
+    background: #4FCE5D;
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 110px;
+    left: 40px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: cente;
+    padding: 3px 10px;
+    z-index: 94;
+}
+
+.m-media {
+    display: none;
+    position: fixed;
+    bottom: 0;
+}
+
+.m-media a.mobile-phn {
+    font-size: 33px;
+    color: #FFFFFF;
+}
+
+.m-media a.whatsapp-phn {
+    font-size: 33px;
+    color: #FFFFFF;
+}
+
+.call-d {
+    background: #0f4270;
+}
+
+.whatsapp-d {
+    background: #279332;
+}
+
+.m-banner {
+    display: none;
+}
+
+.m-form {
+    display: none;
+}
+
+@media screen and (max-width:767px) {
+    .m-media {
+        display: block;
+    }
+    .pc-media {
+        display: none;
+    }
+    .m-banner {
+        display: block;
+    }
+    .bg-img {
+        display: none;
+    }
+    .m-form {
+        display: block;
+    }
+}
+
+/*** Button ***/
+
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn-custom {
+    background-color: #ff0000;
+    border: #dd6600;
+    color: #FFFFFF;
+    margin-top: 5px;
+}
+
+.btn-custom:hover {
+    background: none;
+    border: 1px solid #dd6600;
+    color: #dd6600;
+}
+
+.btn.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-primary {
+    background-color: rgb(255 0 0);
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+.enq-content ::placeholder {
+    color: yellow;
+}
+
+/*** BLINK
+***/
+
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
+
+@keyframes blinker {
+    from {
+        opacity: 1.0;
+    }
+    to {
+        opacity: 0.0;
+    }
+}
+
+/* Apply blinking animation */
+.blink {
+    -webkit-animation-name: blinker;
+    animation-name: blinker;
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+}
+/*** Topbar ***/
+
+.topbar {
+    background-color: #187f9e;
+}
+
+.topbar ul li a {
+    color: #f9db47;
+    font-size: 15px;
+}
+
+.top-bar {
+    
+   
+   
+    
+    margin: 1px;/* Optional: subtle shadow for depth */
+}
+
+
+
+
+
+
+
+
+/* Hover effects */
+.top-bar .nav-txt a:hover {
+    color: #0b0b0b; 
+  text-decoration: underline; 
+} 
+
+
+
+
+/*** Navbar ***/
+
+.logoname {
+    width: 100%;
+    max-width: 170px;
+}
+
+/*** header ***/
+
+.nav-txt a {
+    color: #343434e3;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.bg-img {
+    background-image: url(../img/snow.webp);
+    /* control height of img */
+    min-height: 450px;
+    /* center and scale img */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* mobile form */
+
+.m-head-form {
+    margin: 20px;
+    box-shadow: 0px 0px 10px #84888d;
+    background-color: #00319d;
+    border-radius: 6px;
+}
+
+.m-head-form h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: #07234c;
+    padding: 10px;
+}
+
+.modal-header {
+    background-color: #07234c;
+    padding: 10px;
+}
+
+.modal-header h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.btn-close {
+    color: #FFFFFF !important;
+}
+
+.m-head-form h4 span {
+    color: #eb5602;
+}
+
+.m-head-form label {
+    font-size: 14px;
+}
+
+.m-form-content {
+    padding: 16px;
+}
+
+/* input fields */
+
+.m-head-form input,
+textarea {
+    width: 100%;
+    padding: 9px;
+    margin: 5px 0 9px 0;
+    border: none;
+    background: #f1f1f1;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.m-head-form input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* add style to container */
+
+.head-form {
+    position: absolute;
+   
+    margin: 20px;
+    max-width: 350px;
+    background-color: #001350d6;
+    border-radius: 6px;
+}
+
+.head-form h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    background-color: rgb(5 77 112);
+    padding: 10px;
+}
+
+.modal-header {
+    background-color: #07234c;
+    padding: 10px;
+}
+
+.modal-header h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+.btn-close {
+    color: #FFFFFF !important;
+}
+
+.head-form h4 span {
+    color: #eb5602;
+}
+
+.head-form label {
+    font-size: 14px;
+}
+
+.form-content {
+    padding: 16px;
+}
+
+/* input fields */
+
+.head-form input,
+textarea {
+    width: 100%;
+    padding: 9px;
+    margin: 5px 0 9px 0;
+    border: none;
+    background: #f1f1f1 !important;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.head-form input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* hero Area*/
+
+.hero-para h3 {
+    color: #eb5602;
+}
+
+.hero-para span {
+    color: #07234c;
+}
+
+.hero-para p {
+    font-size: 16px !important;
+    color: #000;
+    font-weight: 500;
+    font-family: system-ui;
+}
+
+/* Card start here*/
+
+.card-shd .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-body {
+    flex: 1 1 auto;
+}
+.card-footer {
+    margin-top: auto;
+    text-align: center;
+}
+
+.card-shd .card {
+    box-shadow: 0 0 10px #726f6f;
+}
+
+.card-body {
+    padding: 0.5rem 1rem !important;
+    background-color: #d7d7d752;
+}
+
+.no-days {
+    font-size: 16px;
+    background: #0f0570;
+    color: #FFFFFF;
+    padding: 5px 1rem;
+    text-align: center;
+}
+
+.des-name {
+    font-weight: 700;
+    color: #d35800;
+    margin: 0rem !important;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.way {
+    font-size: 14px;
+    color: #bd0101;
+    font-weight: 500;
+    text-align: center;
+}
+
+.price {
+    font-size: 22px;
+    background: #000454;
+    color: #ffd402;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.duration {
+    font-size: 14px;
+    color: #bd0101;
+    font-weight: 500;
+    padding: 0rem 1.5rem;
+    text-align: center;
+}
+
+
+/*------
+ Card start here--*/
+
+.button-close {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.modal-header h5 {
+    padding: 0px 20px;
+    font-size: 1.5rem;
+}
+
+.modal-header h5 span {
+    color: #eb5602;
+}
+
+.modal-body form input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 9px 0;
+    border-radius: 5px;
+    border: none;
+    background: #f1f1f1;
+    font-size: 14px;
+}
+
+.modal-content {
+    max-width: 350px;
+}
+
+/* enquiry form  */
+
+.form-bg {
+    background-image: url(../img/snow.webp);
+    /* control height of img */
+    min-height: 450px;
+    /* center and scale img */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.enq-form {
+    position: absolute;
+   
+    margin: 0px;
+    max-width: 400px;
+    padding: 24px 0px;
+    background-color: rgb(12 60 82 / 80%);
+    border-radius: 6px;
+}
+
+.enq-form h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.enq-form h4 span {
+    color: #eb5602;
+}
+
+.enq-form label {
+    font-size: 14px;
+}
+
+.enq-content {
+    padding: 16px;
+}
+
+/* input fields */
+
+.enq-form input,
+textarea {
+    width: 100%;
+    padding: 9px;
+    margin: 5px 0 9px 0;
+    color: #FFFFFF;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: none;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.enq-form input[type=text]:focus,
+input[type=password]:focus {
+    background-color: rgb(10, 3, 80);
+    outline: none;
+}
+
+/*------- Thanks Page -------*/
+
+.w-30 {
+    width: 100%;
+    max-width: 350px;
+}
+
+.content-body--title {
+    font-size: 60px;
+    font-family: 'Great Vibes', cursive;
+    color: #ee7f1a;
+    
+}
+
+.content-body--title span {
+    color: #04234c;
+    
+}   
+
